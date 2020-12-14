@@ -20,9 +20,7 @@
 .carousel-item{
   padding:0 20px;
 }
-.container-fluid{
-  padding: 130px 50px 50px 50px;
-}
+
 .navbar-dark .navbar-brand {
 
   color: #fafafa;
@@ -66,4 +64,16 @@ h1{
   color: #ffffff;
   background: #323232;
   text-decoration: none;
+}
+
+#footer {
+  background-color: #eff8ff;
+}
+a{
+  color: #11999e;
+  margin: 10px 25px;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
 }
