@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Here </title>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+ function validateTheForm()
+ {
+
+ var email=document.validate.email.value;
+ var password = document.validate.password.value;
+ if(email =="")
+ {
+   alert("Enter your Email Address");
+   return false;
+ }
+ if(email.indexOf("@",0)<0)
+ {
+   alert("Enter Valid Email Address");
+   return false;
+ }
+ if(email.indexOf(".",0)==-1)
+ {
+   alert("Enter Valid Email Address");
+   return false;
+ }
+
+ if(password=="")
+ {
+   alert("Enter your password");
+   return false;
+ }
+ var pattern1=/^.{8}$/;
+  if(!pattern1.test(password))
+ {
+   alert("Password should be greater tha 8Digit");
+   return false;
+ }
+
+ alert("Information Submitted Successfully");
+   return true;
+ }
+
+</script>
+
+  </head>
+  <body>
+    <div class="login-form">
+      <img src="images/user-icon.png">
+      <h1>Login </h1>
+      <form name ="validate" class="" action="index.html" method="post" >
+        <input type="email" name="email" class="input-box" placeholder="Your Email">
+        <input type="password" name="password" class="input-box" placeholder="Your Password">
+        <p>Forgot Password ? <a href="#">verify account</a> </p>
+        <button  type="submit" value="Register" class="login-btn" onclick="validateTheForm"> Login</button>
+      <!--          <input type="submit" value="Register" class="signup-btn"> -->
+        <hr>
+        <p class="or">OR</p>
+        <button type="button" class="signup"> <a href="signup.html">Sign Up</a></button>
+
+      </form>
+
+    </div>
+  </body>
+</html>
