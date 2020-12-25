@@ -1,0 +1,28 @@
+
+*{
+	box-sizing: border-box;
+	background-image: linear-gradient(to bottom,#9ba4b4,#bbbbbb,#a6a9b6);
+}
+
+img{
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+p{
+	text-align: center;
+	font-size: 29px;
+	font-family: 'Acme', sans-serif;
+	color: #03506f;
+}
